@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ede7400-11c4-4289-a796-131d0cb7711d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1mfQSrKOpUYANEM4L7csKJwEa60" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/expense-tracker-api" />
+  </component>
+  <component name="RunManager">
+    <configuration name="[spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/expense-tracker-api" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ede7400-11c4-4289-a796-131d0cb7711d" name="Default Changelist" comment="" />
+      <created>1609882167243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609882167243</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609882965742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609882965742" />
+    <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1609882355326">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1609882355326" />
+    <state x="263" y="19" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1609882350766">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="19" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1366.728@0.0.1366.728" timestamp="1609882350766" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609882889797">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609882889797" />
+    <state width="1367" height="232" key="GridCell.Tab.0.bottom" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.0.center" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.0.left" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.0.right" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.1.bottom" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.1.center" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.1.left" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="1367" height="232" key="GridCell.Tab.1.right" timestamp="1609883155284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="232" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1609883155284" />
+    <state width="498" height="398" key="SwitcherDM" timestamp="1609882259853">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="398" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1609882259853" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1609882411043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609882411043" />
+  </component>
+</project>
