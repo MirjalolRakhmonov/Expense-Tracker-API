@@ -1,0 +1,12 @@
+1. Using docker image Create a docker container =>
+   docker container run --name postgresdb -e POSTGRES_PASSWORD=admin
+   docker container ls
+
+2. Implement sql file then run this command =>
+   docker cp expensetracker_db.sql postgresdb:/
+   docker container exec -it postgresdb bash
+   psql -U postgres -file expensetracker_db.sql
+   exit
+
+3. update application.properties to set up connection and check it
+4. Create RestController
