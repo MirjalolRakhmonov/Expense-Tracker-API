@@ -9,4 +9,5 @@
    exit
 
 3. update application.properties to set up connection and check it
-4. Create RestController
+4. Create RestController and test it.
+
