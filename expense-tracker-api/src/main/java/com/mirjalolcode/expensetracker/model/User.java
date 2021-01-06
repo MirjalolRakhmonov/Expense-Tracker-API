@@ -2,14 +2,14 @@ package com.mirjalolcode.expensetracker.model;
 
 public class User {
 
-	private Integer id;
+	private Integer userId;
 	private String firstName;	
 	private String lastName;
 	private String email;
 	private String password;
 	
 	public User(Integer id, String firstName, String lastName, String email, String password) {
-		this.id = id;
+		this.userId = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
@@ -17,11 +17,11 @@ public class User {
 	}
 
 	public Integer getId() {
-		return id;
+		return userId;
 	}
 
 	public void setId(Integer id) {
-		this.id = id;
+		this.userId = id;
 	}
 
 	public String getFirstName() {
@@ -58,7 +58,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", password=" + password + "]";
 	}
 	
