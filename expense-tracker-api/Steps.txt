@@ -11,4 +11,5 @@
 3. update application.properties to set up connection and check it
 4. Create RestController and test it.
 5. Create model, service, exception packages with interfaces
-6. Create UserRepoImpl and UserServImpl classes
+6. Create UserRepository, UserRepository, UserRepoImpl and UserServImpl classes
+7. Some implementations need to be done in UserRepositoryImpl.
