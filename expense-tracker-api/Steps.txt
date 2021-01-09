@@ -13,3 +13,4 @@
 5. Create model, service, exception packages with interfaces
 6. Create UserRepository, UserRepository, UserRepoImpl and UserServImpl classes
 7. Some implementations need to be done in UserRepositoryImpl.
+8. Updating UserRestController.
