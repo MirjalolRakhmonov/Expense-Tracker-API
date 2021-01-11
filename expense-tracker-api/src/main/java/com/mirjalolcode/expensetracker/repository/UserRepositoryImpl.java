@@ -16,14 +16,13 @@ import com.mirjalolcode.expensetracker.model.User;
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
-	private static final String SQL_CREATE="INSERT INTO ET_USERS(USER_ID, FIRST_NAME, LAST_NAME, EMAIL"
-			+ "PASSWORD) VALUES(NEXTVAL('ET_USERS_SEQ), ?, ?, ?, ?)";
-	private static final String SQL_COUNT_BY_EMAIL="SELECT COUNT(*) FROM ET_USERS WHERE EMAIL=?";
-	private static final String SQL_FIND_BY_ID="SELECT USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD"
-			+"FROM ET_USERS WHERE USER_ID=?";
-	
-	@Autowired
-	JdbcTemplate jdbcTemplate;
+	private static final String SQL_CREATE = "INSERT INTO ET_USERS(USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD) VALUES(NEXTVAL('ET_USERS_SEQ'), ?, ?, ?, ?)";
+    private static final String SQL_COUNT_BY_EMAIL = "SELECT COUNT(*) FROM ET_USERS WHERE EMAIL = ?";
+    private static final String SQL_FIND_BY_ID = "SELECT USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD " +
+            "FROM ET_USERS WHERE USER_ID = ?";
+
+    @Autowired
+    JdbcTemplate jdbcTemplate;
 	
 	@Override
 	public Integer create(String firstName, String lastName, String email, String password) throws EtAuthException {
@@ -65,7 +64,7 @@ public class UserRepositoryImpl implements UserRepository {
         return jdbcTemplate.queryForObject(SQL_FIND_BY_ID, new Object[]{userId}, userRowMapper);
     }
 
-    private RowMapper<User> userRowMapper = ((rs, rowNum) -> {
+	private RowMapper<User> userRowMapper = ((rs, rowNum) -> {
         return new User(rs.getInt("USER_ID"),
                 rs.getString("FIRST_NAME"),
                 rs.getString("LAST_NAME"),
