@@ -18,6 +18,7 @@
 		<java.version>11</java.version>
 		<flyway.version>5.2.4</flyway.version>
 		<lombok.version>1.18.12</lombok.version>
+		<hibernate.validator.version>6.0.10.Final</hibernate.validator.version>
 	</properties>
 
 	<dependencies>
@@ -51,6 +52,11 @@
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
