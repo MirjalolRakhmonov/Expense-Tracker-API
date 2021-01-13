@@ -3,7 +3,7 @@ package com.mirjalolcode.expensetracker.service;
 import com.mirjalolcode.expensetracker.exception.EtAuthException;
 import com.mirjalolcode.expensetracker.model.User;
 import com.mirjalolcode.expensetracker.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,10 +11,10 @@ import java.util.regex.Pattern;
 
 @Service
 @Transactional
+@AllArgsConstructor
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     private static final Pattern PATTERN = Pattern.compile("^(.+)@(.+)$");
 
