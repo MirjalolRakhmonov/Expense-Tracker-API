@@ -19,4 +19,5 @@
                   \connect expensetrackerdb;
                   select * from et_users;	
               
-10. Adding login functionality and hashing the password 
+10. Adding login functionality and hashing the password
+11. Adding JWT authentication
