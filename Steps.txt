@@ -2,7 +2,7 @@
    docker container run --name postgresdb -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres
    docker container ls
 
-2. Implement sql file then run this command =>
+//2. Implement sql file then run this command =>
    docker cp expensetracker_db.sql postgresdb:/
    docker container exec -it postgresdb bash
    psql -U postgres --file expensetracker_db.sql
@@ -15,7 +15,7 @@
 7. Some implementations need to be done in UserRepositoryImpl.
 8. Updating UserRestController.
 
-9. Just to check: docker container exec -it postgresdb psql -U postgres
+//9. Just to check: docker container exec -it postgresdb psql -U postgres
                   \connect expensetrackerdb;
                   select * from et_users;	
               
