@@ -1,5 +1,7 @@
 package com.mirjalolcode.expensetracker.service;
 
+import com.mirjalolcode.expensetracker.EtResourceNotFoundException;
+import com.mirjalolcode.expensetracker.exception.EtBadRequestException;
 import com.mirjalolcode.expensetracker.model.Category;
 
 import java.util.List;
