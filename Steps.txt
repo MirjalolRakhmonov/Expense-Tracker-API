@@ -21,3 +21,4 @@
               
 10. Adding login functionality and hashing the password
 11. Adding JWT authentication
+12. Implementing Categories
