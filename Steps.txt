@@ -23,3 +23,4 @@
 11. Adding JWT authentication
 12. Implementing Category, CategoryService and Exception classes
 13. Implementing CategoryRepo interface, CatRepoImpl and CatServiceImpl class
+14. Updating CategoryRestController, exposing endpoint for creating a category

@@ -1,4 +1,4 @@
-package com.mirjalolcode.expensetracker;
+package com.mirjalolcode.expensetracker.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,10 +1,10 @@
 package com.mirjalolcode.expensetracker.service;
 
-import com.mirjalolcode.expensetracker.EtResourceNotFoundException;
+import com.mirjalolcode.expensetracker.exception.EtResourceNotFoundException;
 import com.mirjalolcode.expensetracker.exception.EtBadRequestException;
 import com.mirjalolcode.expensetracker.model.Category;
 import com.mirjalolcode.expensetracker.repository.CategoryRepository;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,10 +12,10 @@ import java.util.List;
 
 @Service
 @Transactional
-@AllArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
 
-    private final CategoryRepository categoryRepository;
+    @Autowired
+    CategoryRepository categoryRepository;
 
     @Override
     public List<Category> fetchAllCategories(Integer userId) {
@@ -29,7 +29,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category addCategory(Integer userId, String title, String description) throws EtBadRequestException {
-        int categoryId=categoryRepository.create(userId, title, description);
+        int categoryId = categoryRepository.create(userId, title, description);
         return categoryRepository.findById(userId, categoryId);
     }
 

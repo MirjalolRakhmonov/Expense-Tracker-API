@@ -4,6 +4,7 @@ import com.mirjalolcode.expensetracker.exception.EtAuthException;
 import com.mirjalolcode.expensetracker.model.User;
 import com.mirjalolcode.expensetracker.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,12 +12,10 @@ import java.util.regex.Pattern;
 
 @Service
 @Transactional
-@AllArgsConstructor
 public class UserServiceImpl implements UserService {
 
-    private final UserRepository userRepository;
-
-    private static final Pattern PATTERN = Pattern.compile("^(.+)@(.+)$");
+    @Autowired
+    UserRepository userRepository;
 
     @Override
     public User validateUser(String email, String password) throws EtAuthException {
@@ -29,18 +28,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User registerUser(String firstName, String lastName, String email, String password) throws EtAuthException {
-        if (email != null) {
-            email = email.toLowerCase();
-        }
-        if (!PATTERN.matcher(email).matches()) {
+        Pattern pattern = Pattern.compile("^(.+)@(.+)$");
+        if(email != null) email = email.toLowerCase();
+        if(!pattern.matcher(email).matches())
             throw new EtAuthException("Invalid email format");
-        }
         Integer count = userRepository.getCountByEmail(email);
-        if (count > 0) {
+        if(count > 0)
             throw new EtAuthException("Email already in use");
-        }
-
-        return userRepository.findById(userRepository.create(firstName, lastName, email, password));
+        Integer userId = userRepository.create(firstName, lastName, email, password);
+        return userRepository.findById(userId);
     }
 
 }
