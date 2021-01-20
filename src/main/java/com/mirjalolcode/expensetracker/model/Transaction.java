@@ -1,6 +1,6 @@
 package com.mirjalolcode.expensetracker.model;
 
-public class Transactions
+public class Transaction
 {
     private Integer transactionId;
     private Integer categoryId;
@@ -9,8 +9,8 @@ public class Transactions
     private String note;
     private Long transactionDate;
 
-    public Transactions(Integer transactionId, Integer categoryId, Integer userId, Double amount, String note,
-                        Long transactionDate) {
+    public Transaction(Integer transactionId, Integer categoryId, Integer userId, Double amount, String note,
+                       Long transactionDate) {
         this.transactionId = transactionId;
         this.categoryId = categoryId;
         this.userId = userId;
