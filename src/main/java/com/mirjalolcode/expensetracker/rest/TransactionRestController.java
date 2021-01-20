@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -51,5 +52,19 @@ public class TransactionRestController {
         Transaction transaction = transactionService.addTransaction(userId, categoryId, amount, note, transactionDate);
 
         return new ResponseEntity<>(transaction, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/{transactionId}")
+    public ResponseEntity<Map<String, Boolean>> updateTransaction(HttpServletRequest request,
+                                                                  @PathVariable("categoryId") Integer categoryId,
+                                                                  @PathVariable("transactionId") Integer transactionId,
+                                                                  @RequestBody Transaction transaction) {
+        int userId=(Integer) request.getAttribute("userId");
+        transactionService.updateTransaction(userId, categoryId, transactionId, transaction);
+
+        Map<String, Boolean> map=new HashMap<>();
+        map.put("success",true);
+
+        return new ResponseEntity<>(map, HttpStatus.OK);
     }
 }

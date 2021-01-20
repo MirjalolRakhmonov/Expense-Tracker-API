@@ -27,4 +27,4 @@
 15. Category - Find & Update Functionality
 16. Adding Category Transactions (creating Transaction model, Interface for Service and Repository,
       Implementation classes for both Service and Repository).
-17. Implementing RestController (POST request in addTransaction, FIND methods to get allTransactions)
+17. Implementing RestController (POST request in addTransaction, FIND -> allTransactions, UPDATE )

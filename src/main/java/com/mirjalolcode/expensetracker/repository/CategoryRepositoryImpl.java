@@ -82,7 +82,7 @@ public class CategoryRepositoryImpl implements CategoryRepository {
             userId, categoryId});
         }
         catch (Exception e){
-
+            throw new EtBadRequestException("Invalid request");
         }
     }
 
