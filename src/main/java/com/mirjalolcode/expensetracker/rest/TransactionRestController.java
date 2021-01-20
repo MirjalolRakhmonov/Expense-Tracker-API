@@ -18,8 +18,26 @@ public class TransactionRestController {
     @Autowired
     TransactionService transactionService;
 
-    //@GetMapping("")
-    //public ResponseEntity<List<Transaction>> getAllTransactions(HttpServletRequest request)
+    @GetMapping("")
+    public ResponseEntity<List<Transaction>> getAllTransactions(HttpServletRequest request,
+                                                                @PathVariable("categoryId") Integer categoryId){
+
+        int userId=(Integer) request.getAttribute("userId");
+        List<Transaction> transactions=transactionService.fetchAllTransactions(userId, categoryId);
+
+        return new ResponseEntity<>(transactions, HttpStatus.OK);
+    }
+
+    @GetMapping("{transactionId}")
+    public ResponseEntity<Transaction> getTransactionById(HttpServletRequest request,
+                                                          @PathVariable("transactionId") Integer transactionId,
+                                                          @PathVariable("categoryId") Integer categoryId){
+
+        int userId=(Integer) request.getAttribute("userId");
+        Transaction transaction=transactionService.fetchTransactionById(userId, categoryId, transactionId);
+
+        return new ResponseEntity<>(transaction, HttpStatus.OK);
+    }
 
     @PostMapping("")
     public ResponseEntity<Transaction> addTransaction(HttpServletRequest request,
