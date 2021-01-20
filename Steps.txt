@@ -27,3 +27,4 @@
 15. Category - Find & Update Functionality
 16. Adding Category Transactions (creating Transaction model, Interface for Service and Repository,
       Implementation classes for both Service and Repository).
+17. Implementing RestController (POST request is tested in addTransaction)
