@@ -25,3 +25,4 @@
 13. Implementing CategoryRepo interface, CatRepoImpl and CatServiceImpl class
 14. Updating CategoryRestController, exposing endpoint for creating a category
 15. Category - Find & Update Functionality
+16. Adding Category Transactions (creating Transactions, 
