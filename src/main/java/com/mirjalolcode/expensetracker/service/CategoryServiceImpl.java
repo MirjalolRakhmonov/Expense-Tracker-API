@@ -42,5 +42,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void removeWithAllTransactions(Integer userId, Integer categoryId) throws EtResourceNotFoundException {
 
+        this.fetchCategoryById(userId, categoryId);
+        categoryRepository.removeById(userId, categoryId);
     }
 }
