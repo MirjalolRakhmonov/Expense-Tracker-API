@@ -29,3 +29,4 @@
       Implementation classes for both Service and Repository).
 17. Implementing RestController (POST request in addTransaction, FIND -> allTransactions, UPDATE )
 18. Deleting Category & Transactions.
+19. CORS & Testing from Web Client
